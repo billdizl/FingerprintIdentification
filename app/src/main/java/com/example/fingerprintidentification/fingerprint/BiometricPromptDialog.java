@@ -22,7 +22,7 @@ import com.example.fingerprintidentification.R;
 
 
 /**
- *  Created by liang on 2019/06/13.
+ * Created by gaoyang on 2018/06/19.
  */
 public class BiometricPromptDialog extends DialogFragment {
 
@@ -69,7 +69,7 @@ public class BiometricPromptDialog extends DialogFragment {
         mUsePasswordBtn = view.findViewById(R.id.use_password_btn);
         mCancelBtn = view.findViewById(R.id.cancel_btn);
 
-        mUsePasswordBtn.setVisibility(View.GONE);
+       // mUsePasswordBtn.setVisibility(View.GONE);
         mUsePasswordBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -119,7 +119,6 @@ public class BiometricPromptDialog extends DialogFragment {
         super.onDismiss(dialog);
 
         if (mDialogActionCallback != null) {
-            setState(STATE_NORMAL);
             mDialogActionCallback.onDialogDismiss();
         }
     }

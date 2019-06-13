@@ -46,9 +46,9 @@ public class BiometricPromptApi23 implements IBiometricPromptImpl {
             @Override
             public void onDialogDismiss() {
                 //当dialog消失的时候，包括点击userPassword、点击cancel、和识别成功之后
-                if (mCancellationSignal != null && !mCancellationSignal.isCanceled()) {
-                    mCancellationSignal.cancel();
-                }
+//                if (mCancellationSignal != null && !mCancellationSignal.isCanceled()) {
+//                    mCancellationSignal.cancel();
+//                }
             }
 
             @Override
